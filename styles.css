@@ -77,7 +77,7 @@ aside {
 /* header section */
 header {
     background-color: var(--light-grey);
-   grid-area: 1 / 2 / 2 / 3;
+    grid-area: 1 / 2 / 2 / 3;
 }
 
 /* main section */

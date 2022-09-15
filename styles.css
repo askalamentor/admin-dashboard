@@ -218,8 +218,12 @@ main {
     grid-template-columns: 3fr 1fr;
 }
 
-.project-section {
-
+#project-area-header {
+    position: relative;
+    top: 2rem;
+    left: 2rem;
+    color: var(--black);
+    font-size: 1.25rem;
 }
 
 .project-grid {
@@ -228,13 +232,13 @@ main {
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     padding: 3rem 1rem 1rem 1rem;
-
 }
 
 .project-card {
     background-color: var(--white);
-    height: 10rem;
+    height: 12rem;
     margin: 1rem;
+    border-left: 0.3rem solid var(--green);
     border-radius: 10px;
     padding: 1rem;
     overflow: auto;
@@ -245,7 +249,11 @@ main {
     background-color: var(--white);
     color: var(--black);
     border-radius: 10px;
-    margin: 0.3rem auto;
+    margin: 0.4rem auto;
+}
+
+.project-card > h4 {
+    font-size: 1.1rem;
 }
 
 .project-buttons-container {
@@ -262,9 +270,35 @@ main {
 .project-buttons > img {
     width: 1.5rem;
     height: 1.5rem;
-    padding: 0.5rem 1rem;
+    padding: 1rem 1rem 0.1rem;
 }
 
+.project-buttons > img:hover {
+    transform: translateY(-3px);
+}
+
+.project-buttons > img:active {
+    transform: translateY(0px);
+}
+
+/* media section */
 .media-section {
-    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.announcement-container {
+    background-color: red;
+    width: 14rem;
+    height: 20rem;
+    margin-top: 5.4rem;
+}
+
+.trending-container {
+    background-color: yellow;
+    width: 14rem;
+    height: 20rem;
+    margin-top: 5.4rem;
 }

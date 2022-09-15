@@ -184,6 +184,7 @@ header {
     }
 }
 
+/* button container */ 
 .button-container {
     background-color: var(--white);
     display: flex;
@@ -201,7 +202,8 @@ header {
 }
 
 .media-control-button:hover {
-    transform: translateY(-5px);
+    transform: translateY(-3px);
+    background-color: var(--green);
 }
 
 .media-control-button:active {
@@ -212,4 +214,57 @@ header {
 main {
     background-color: var(--slate);
     grid-area: 2 / 2 / 3 / 3;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.project-section {
+
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    padding: 3rem 1rem 1rem 1rem;
+
+}
+
+.project-card {
+    background-color: var(--white);
+    height: 10rem;
+    margin: 1rem;
+    border-radius: 10px;
+    padding: 1rem;
+    overflow: auto;
+}
+
+.project-card > div, h4 {
+    text-align: justify;
+    background-color: var(--white);
+    color: var(--black);
+    border-radius: 10px;
+    margin: 0.3rem auto;
+}
+
+.project-buttons-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.project-buttons {
+    border: none;
+    background-color: var(--white);
+}
+
+.project-buttons > img {
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 0.5rem 1rem;
+}
+
+.media-section {
+    background-color: blue;
 }

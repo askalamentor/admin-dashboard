@@ -301,6 +301,16 @@ main {
     justify-content: center;
 }
 
+.announcement-container > h3,
+.trending-container > h3 {
+    position: relative;
+    color: var(--black);
+    font-size: 1.1rem;
+    font-weight: 700;
+    top: -1.5rem;
+
+}
+
 .announcement-container > hr {
     margin: auto 1rem;
 }
@@ -333,7 +343,6 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: center;
 }
 
 .trend-child {
